@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghanian Naming Calendar</title>
+  <link rel="stylesheet" href="CSS/styles.css" type="text/css">
+  <link rel="stylesheet" href="CSS/css/bootstrap.css">
+
+</head>
+<body>
+  <div class="container">
+
+    <div id="heading" >
+      <h1>Akan Name Generator</h1>
+    </div>
+
+    <div class= description>
+      <p>Wanna be part of the Ghanain culture.</p>
+      <p>Getting an Akan name now made easy.All you have to do is give your name and date of birth and waalaah!!!</p>
+    </div>
+
+    <div class="heading">
+      <h2>Enter your details below:</h2>
+    </div>
+
+    <br>
+
+    <div class="overlay">
+
+      <form name="myForm" class="form" onsubmit="validate();">
+        <div class="form-group">
+          <label for="number">Year of Birth:</label>
+          <input type="number" class="form-control" id="year" placeholder="enter year born" name="year">
+        </div>
+
+      <br>
+
+      <div class="form-group">
+        <label for="month">Month of Birth:</label>
+        <input type="number" class="form-control" id="month" placeholder="enter month born" name="month">
+      </div>
+
+      <br>
+
+      <div class="form-group">
+        <label for="date">Date of Birth:</label>
+        <input type="number" class="form-control" id="date" placeholder="enter date born" name="date">
+      </div>
+      <br>
+
+      <div class="form-group">
+        <label for="month">Gender</label><br>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male 
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female 
+          </label>
+        </div>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-primary" onclick="findName();">Get Name</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
